@@ -1,0 +1,36 @@
+button {
+    width: 16vw;
+    height: 8vh;
+    text-align: center;
+    cursor: pointer;
+    color: #fff;
+    background-color: $color-orange;
+    border: none;
+    transition: filter 0.3s;
+    font-size: 18px;
+    z-index: 2;
+
+    &:hover {
+        filter: brightness(0.9);
+    }
+}
+
+@media (max-width: 790px) {
+    button {
+        width: 25vw;
+    }
+}
+
+@media (max-width: 560px) {
+    button {
+        width: 30vw;
+    }
+}
+
+@media (max-width: 440px) {
+    button  {
+        width: 45vw;
+        font-size: 16px;
+        height: 6vh;
+    }
+}

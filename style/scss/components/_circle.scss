@@ -1,0 +1,36 @@
+.circle {
+    max-width: $circle-size;
+    max-height: $circle-size;
+    border-radius: 50%;
+    border: 1px solid $color-orange;
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    left: calc(50% - ($circle-size/2));
+    margin-bottom: calc($circle-size + 2px);
+}
+
+.circle:not(:first-child) {
+    margin-top: calc($circle-size + 2px);
+}
+
+.circle__number {
+    font-size: 16px;
+    color: $color-orange;
+}
+
+.circle__bar {
+    width: $circle-width;
+    height: $circle-size;
+    background-color: $color-orange;
+    position: absolute;
+}
+
+.circle__bar-down {
+    transform: translateY($circle-size - $circle-width);
+}
+
+.circle__bar-up {
+    transform: translateY(-($circle-size - $circle-width));
+}
